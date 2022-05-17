@@ -30,4 +30,4 @@ mongoose
     console.log('Connected to MongoDB')
     app.listen(port, () => console.log(`Listening on port ${port}`))
   })
-  .catch((err) => console.log(err))
+  .catch((err) => console.log(`Error connecting to MongoDB: ${err}`))
